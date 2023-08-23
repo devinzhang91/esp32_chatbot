@@ -1,0 +1,48 @@
+# put here your custom config value
+menu "Example Configuration"
+	
+config WIFI_SSID
+    string "WiFi SSID"
+	default "myssid"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "mypassword"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+
+		Can be left blank if the network has no security set.
+
+config TARGET_URL
+    string "TARGET URL"
+    default "192.168.1.106"
+	help
+		Server IP address.
+
+config TARGET_PORT
+    int "TARGET PORT"
+    default "9000"
+	help
+		Server port.
+		
+config AUDIO_SAMPLE_RATE
+    int "AUDIO_SAMPLE_RATE"
+    default "16000"
+	help
+		WAV audio sample rate.
+		
+config AUDIO_BITS
+    int "AUDIO_BITS"
+    default "16"
+	help
+		WAV audio data bit wise.
+
+config AUDIO_CHANNELS
+    int "AUDIO_CHANNELS"
+    default "1"
+	help
+		WAV audio channels number.
+		
+endmenu
